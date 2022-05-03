@@ -4,18 +4,18 @@ def main():
 
 
 def create_inventory():
-    mydict = {
+    my_dict = {
         "window": 78000,
         "door": 60000
     }
-    return mydict
+    return my_dict
 
 
 def menu_cycle(inventory):
     while True:
         print('Menu: \n0 : Print catalog\n1 : Add/Modify\n2 : Delete\n3 : Quit')
-        myinput = input('Choose a menu: ')
-        match myinput:
+        my_input = input('Choose a menu: ')
+        match my_input:
             case '0':
                 print(inventory)
             case '1':
@@ -31,10 +31,13 @@ def menu_cycle(inventory):
                 try:
                     inventory.pop(key_to_delete)
                     print('Delete successful')
-                except:
+                except Exception as err:
+                    print(err)
                     print('There is no such product in the database')
             case '3':
                 break
 
 
-main()
+if __name__ == "__main__":
+    main()
+
