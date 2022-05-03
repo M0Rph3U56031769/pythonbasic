@@ -16,7 +16,7 @@ def almenu():
     elif(menuszam=="2"):
         modositas()
     else:
-        ("Ismeretlen menüszám!")
+        print("Ismeretlen menüszám!")
 
 
 
