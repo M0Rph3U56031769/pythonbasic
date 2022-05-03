@@ -50,5 +50,4 @@ def repo(products: dict):  # Infinite loop
             print("The typed input is not correct!")
         time.sleep(1)
 
-
 repo(products_dict)
