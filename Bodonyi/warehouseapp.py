@@ -4,63 +4,63 @@ Ajtó: 30000 Ft
 Ablak: 67000 Ft
 """
 
-keszlet = {
+warehouse = {
     "Ajtó": 30000,
     "Ablak": 67000,
 }
 
 
-def almenu():
+def submenu():
     print("Hozzáadni szeretnél vagy módosítani?")
-    menuszam = input("1. Hozzáadás\n2. Módosítás\n")
-    if menuszam == "1":
-        hozzadas()
-    elif menuszam == "2":
-        modositas()
+    menu_number = input("1. Hozzáadás\n2. Módosítás\n")
+    if menu_number == "1":
+        add()
+    elif menu_number == "2":
+        modify()
     else:
         print("Ismeretlen menüszám!")
 
 
-def lista():
-    for elem in keszlet:
-        print(elem, " --- ", keszlet[elem])
+def listing():
+    for item in warehouse:
+        print(item, " --- ", warehouse[item])
 
 
-def hozzadas():
+def add():
     while True:
         print(20 * "*")
-        elem_nev = input("Hozzaadandó elem neve: ")
-        sikeres_elemfelvetel = True
-        while sikeres_elemfelvetel == True:
+        product_name = input("Hozzaadandó elem neve: ")
+        succesful_product_recording = True
+        while succesful_product_recording == True:
             try:
-                elem_ar = input("Az ára Ft-ban: ")
-                keszlet[elem_nev] = int(elem_ar)
-                sikeres_elemfelvetel = False
+                product_price = input("Az ára Ft-ban: ")
+                warehouse[product_name] = int(product_price)
+                succesful_product_recording = False
             except:
                 print("Nem megfelelő input!")
 
         print(
-            f"A(z) {elem_nev} elem , {elem_ar} árral hozzá lett adva a raktárkészlethez."
+            f"A(z) {product_name} elem , {product_price} árral hozzá lett adva a raktárkészlethez."
         )
         n = input("0. További elemek felvétele\n1. Visszatérés a főmenühöz\n")
         if int(n) == 1:
             return
 
 
-def modositas():
+def modify():
     while True:
         print(20 * "*")
-        elem_nev = input("Add meg a módosítandó elem nevét: ")
-        if elem_nev in keszlet:
-            sikeres_elemfelvetel = True
-            while sikeres_elemfelvetel == True:
+        product_name = input("Add meg a módosítandó elem nevét: ")
+        if product_name in warehouse:
+            succesful_product_recording = True
+            while succesful_product_recording == True:
                 try:
-                    elem_ar = input("Add meg az új árat: ")
-                    keszlet[elem_nev] = int(elem_ar)
+                    product_price = input("Add meg az új árat: ")
+                    warehouse[product_name] = int(product_price)
                     print(
-                        f"A(z) {elem_nev} elem , {elem_ar} árral hozzá lett adva a raktárkészlethez."
+                        f"A(z) {product_name} elem , {product_price} árral hozzá lett adva a raktárkészlethez."
                     )
-                    sikeres_elemfelvetel = False
+                    succesful_product_recording = False
                 except:
                     print("Nem megfelelő input!")
         else:
@@ -70,17 +70,17 @@ def modositas():
             return
 
 
-def torles():
-    if len(keszlet) > 0:
+def delete():
+    if len(warehouse) > 0:
         while True:
             print(20 * "*")
-            torles_bool = False
-            while torles_bool == False:
-                elem_nev = input("Add meg,hogy melyik elemet szeretnéd törölni: ")
-                if elem_nev in keszlet:
-                    torolt_elem = keszlet.pop(elem_nev)
-                    print("A(z) {} törölve lett.".format(elem_nev))
-                    sikeres_torles = True
+            delete_bool = False
+            while delete_bool == False:
+                product_name = input("Add meg,hogy melyik elemet szeretnéd törölni: ")
+                if product_name in warehouse:
+                    deleted_product = warehouse.pop(product_name)
+                    print("A(z) {} törölve lett.".format(product_name))
+                    delete_bool = True
                     return
 
                 else:
@@ -96,14 +96,14 @@ while True:
             "A funkciók eléréséhez írd be a hozzátartozó számot: \n1. Hozzáadás/módosítás\n2. Törlés\n3. Kilépés\n "
         )
         if n == "1":
-            almenu()
+            submenu()
         elif n == "2":
-            torles()
+            delete()
         elif n == "3":
             print(20 * "*")
             break
         elif n == "titok":
-            lista()
+            listing()
         else:
             print("Nem létező menüszám!")
 
