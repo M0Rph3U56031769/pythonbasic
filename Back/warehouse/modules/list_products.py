@@ -7,7 +7,7 @@ class ListProducts:
     def list_products():
         """
         Lists the items in the warehouse inventory.
-        :param inventory:
+        :param:
         :return:
         """
         handler = DataHandling()

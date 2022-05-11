@@ -9,7 +9,7 @@ class MainMenu:
     def selector() -> None:
         """
         Main menu of the program
-        :param inventory:
+        :param:
         :return:
         """
 
@@ -17,7 +17,8 @@ class MainMenu:
             choose_menu = input("Choose a menu:\n1 - ADD/UPDATE Product \n2 - DELETE product \n"
                                 "3 - LIST products\n4 - EXIT\nWrite the number of the menu here: ")
             if choose_menu == "1":
-                AddOrUpdate.add_or_update_product()
+                add = AddOrUpdate()
+                add.create_or_update_product()
             elif choose_menu == "2":
                 DeleteProduct.delete_product()
             elif choose_menu == "3":

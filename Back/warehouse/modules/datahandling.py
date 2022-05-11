@@ -1,4 +1,7 @@
 import json
+import os
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 class DataHandling:
@@ -6,19 +9,22 @@ class DataHandling:
     data: dict
 
     def read_json(self):
-        file_path = "/home/abaeck/PycharmProjects/third_try/pythonbasic/Back/warehouse/modules/data.json"
+
+        file_path = os.path.join(ROOT_DIR, "data.json")
         with open(file_path, mode="r", encoding="utf-8") as json_file:
             self.data = json.load(json_file)
         return self.data
 
-    def write_json(self, data):
-        file_path = "/home/abaeck/PycharmProjects/third_try/pythonbasic/Back/warehouse/modules/data.json"
-
+    @staticmethod
+    def write_json(data):
+        file_path = os.path.join(ROOT_DIR, "data.json")
         with open(file=file_path, mode="w", encoding="utf-8") as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
+            json_file.write("\n")
 
-    def product_counter(self):
-        file_path = "/home/abaeck/PycharmProjects/third_try/pythonbasic/Back/warehouse/modules/data.json"
+    @staticmethod
+    def product_counter():
+        file_path = os.path.join(ROOT_DIR, "data.json")
         with open(file_path, mode="r", encoding="utf-8") as json_file:
             inventory = json.load(json_file)
             counter = 0
@@ -26,8 +32,8 @@ class DataHandling:
                 counter += 1
         return counter
 
-
-    def validate_unique_id_and_name(self, inventory, handler):
+    @staticmethod
+    def validate_unique_id_and_name(inventory, handler):
         product_id_list = []
         for i in inventory:
             product_id_list.append(i)
@@ -41,4 +47,3 @@ class DataHandling:
             for key in inventory[ids]:
                 print(key)
         print(product_name_list)
-

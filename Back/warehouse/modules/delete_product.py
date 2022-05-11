@@ -18,7 +18,6 @@ class DeleteProduct:
         try:
             inventory.pop(product_to_delete)
             print(f"SUCCESSFUL DELETION\n{product_to_delete} is deleted.\n" + "*" * 50)
-        except:
+        except KeyError:
             print("DELETION FAILURE\nThe is no such product\n" + "*" * 50)
-
         handler.write_json(inventory)
