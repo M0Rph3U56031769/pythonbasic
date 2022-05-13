@@ -1,9 +1,11 @@
 from .datahandling import DataHandling
+from .logger import Logger
 
 
 class AddOrUpdate:
     handler = DataHandling()
     inventory = handler.read_json()
+    logger = Logger()
 
     def create_unique_id(self):
         """
@@ -67,7 +69,7 @@ class AddOrUpdate:
 
         product_name = self.get_product_name()
         if self.decide_upgrading(product_name):
-            self.upgrade_product(product_name, self.get_product_value())
+            self.update_product(product_name, self.get_product_value())
         else:
             self.create_product(product_name, self.get_product_value())
         self.handler.write_json(self.inventory)
@@ -81,9 +83,10 @@ class AddOrUpdate:
 
         product_id = self.create_unique_id()
         self.inventory[product_id] = {product_name: product_value}
+        self.logger.log_new_record(product_name, product_value)
         return self.inventory
 
-    def upgrade_product(self, product_name, product_value):
+    def update_product(self, product_name, product_value):
         key_list = list(self.inventory.keys())
         val_list = list(self.inventory.values())
         """
@@ -98,6 +101,7 @@ class AddOrUpdate:
 
             if product_name == list(v)[0]:
                 self.inventory[product_id] = {product_name: product_value}
+        self.logger.log_update(product_name, product_value)
 
         return self.inventory
 

@@ -20,7 +20,8 @@ class MainMenu:
                 add = AddOrUpdate()
                 add.create_or_update_product()
             elif choose_menu == "2":
-                DeleteProduct.delete_product()
+                delete = DeleteProduct()
+                delete.delete_product()
             elif choose_menu == "3":
                 ListProducts.list_products()
             elif choose_menu == "4":
