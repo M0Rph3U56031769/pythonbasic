@@ -48,3 +48,26 @@ class DataHandling:
             for key in inventory[ids]:
                 print(key)
         print(product_name_list)
+
+    @staticmethod
+    def get_product_name(product_id, inventory):
+        try:
+            for current_id, product in inventory.items():
+                if current_id == product_id:
+                    for product_name, product_value in product.items():
+                        current_prod_name = product_name
+            return current_prod_name
+        except UnboundLocalError:
+            print("There is no such record in the database")
+
+
+    @staticmethod
+    def get_product_value(product_id, inventory):
+        try:
+            for current_id, product in inventory.items():
+                if current_id == product_id:
+                    for product_name, product_value in product.items():
+                        current_prod_value = product_value
+            return current_prod_value
+        except UnboundLocalError:
+            pass

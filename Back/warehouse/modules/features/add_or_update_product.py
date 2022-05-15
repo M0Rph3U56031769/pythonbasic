@@ -23,7 +23,7 @@ class AddOrUpdate:
         return product_id
 
     @staticmethod
-    def get_product_name():
+    def get_product_name_from_user():
         """
         Get name of the product from input
         :param:
@@ -36,7 +36,7 @@ class AddOrUpdate:
         return product_name
 
     @staticmethod
-    def get_product_value():
+    def get_product_value_from_user():
         """
         Get value of the product from input - only int is valid
         :param:
@@ -67,11 +67,11 @@ class AddOrUpdate:
         :return: product_value
         """
 
-        product_name = self.get_product_name()
+        product_name = self.get_product_name_from_user()
         if self.decide_upgrading(product_name):
-            self.update_product(product_name, self.get_product_value())
+            self.update_product(product_name, self.get_product_value_from_user())
         else:
-            self.create_product(product_name, self.get_product_value())
+            self.create_product(product_name, self.get_product_value_from_user())
         self.handler.write_json(self.inventory)
 
     def create_product(self, product_name, product_value):

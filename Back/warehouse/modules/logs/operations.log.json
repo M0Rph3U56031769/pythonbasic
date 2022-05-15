@@ -190,5 +190,630 @@
                 }
             }
         }
+    ],
+    "2022-05-14 21:09:49.166850": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "2": {
+                    "test_item": 3000
+                }
+            }
+        }
+    ],
+    "2022-05-15 22:12:49.259087": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "new values": {
+                "asd": 30001000
+            }
+        }
+    ],
+    "2022-05-15 23:10:18.736276": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "new_item2": 300000
+            }
+        }
+    ],
+    "2022-05-15 23:19:22.286197": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "lopacika": 20000
+            }
+        }
+    ],
+    "2022-05-15 23:20:54.772810": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "test": 10
+            }
+        }
+    ],
+    "2022-05-15 23:20:59.048319": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "test2": 2000
+            }
+        }
+    ],
+    "2022-05-15 23:21:03.771902": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "test3": 3213
+            }
+        }
+    ],
+    "2022-05-15 23:21:07.597792": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "test4": 231333
+            }
+        }
+    ],
+    "2022-05-15 23:21:15.496873": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "test6": 40000
+            }
+        }
+    ],
+    "2022-05-15 23:21:28.381750": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "test6": 40000
+            }
+        }
+    ],
+    "2022-05-15 23:23:48.552336": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-15 23:24:29.922235": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-15 23:26:21.516553": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-15 23:26:41.524170": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-15 23:26:43.627022": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-15 23:27:08.762612": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-15 23:27:39.078205": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "test4": 231333
+            }
+        }
+    ],
+    "2022-05-15 23:47:14.913611": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "asd": 30001000
+            }
+        }
+    ],
+    "2022-05-15 23:50:07.641201": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "test": 10
+            }
+        }
+    ],
+    "2022-05-15 23:54:16.646811": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "testka": 12323
+            }
+        }
+    ],
+    "2022-05-15 23:54:25.344909": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "testasd": 30013
+            }
+        }
+    ],
+    "2022-05-15 23:54:37.352491": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "test": 321
+            }
+        }
+    ],
+    "2022-05-15 23:55:14.006289": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asddsa": 30
+            }
+        }
+    ],
+    "2022-05-15 23:55:23.161163": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "new": 31
+            }
+        }
+    ],
+    "2022-05-15 23:55:38.542370": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "3213": 3
+            }
+        }
+    ],
+    "2022-05-16 00:09:41.085689": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "test_item": 3000
+            }
+        }
+    ],
+    "2022-05-16 00:09:58.669178": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "testka": 12323
+            }
+        }
+    ],
+    "2022-05-16 00:10:36.769155": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "testka": 12323
+            }
+        }
+    ],
+    "2022-05-16 00:11:30.499290": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "testka": 12323
+            }
+        }
+    ],
+    "2022-05-16 00:12:12.283132": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "testka": 12323
+            }
+        }
+    ],
+    "2022-05-16 00:19:57.747047": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:23:28.764184": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:23:44.550536": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:26:17.411845": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:26:45.431814": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 00:29:02.227571": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:29:58.325842": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:31:03.532533": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:32:30.777783": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:32:44.160159": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:33:54.111662": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:33:54.116724": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 00:34:19.811735": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 00:34:19.817720": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
     ]
 }

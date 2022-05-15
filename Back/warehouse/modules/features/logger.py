@@ -33,6 +33,7 @@ class Logger:
         self.log_handler.write_op_log_file(self.operation_logs)
 
     def log_delete_record_successful(self, product_name, product_value):
+
         self.log_data = [
             {"username": self.user},
             {"operation": "delete record"},
@@ -41,6 +42,16 @@ class Logger:
              }
         ]
 
+        date_time = str(datetime.datetime.now())
+        self.operation_logs[date_time] = self.log_data
+        self.log_handler.write_op_log_file(self.operation_logs)
+
+    def log_delete_record_failure(self):
+        self.log_data = [
+            {"username": self.user},
+            {"operation": "delete record"},
+            {"success": False}
+        ]
         date_time = str(datetime.datetime.now())
         self.operation_logs[date_time] = self.log_data
         self.log_handler.write_op_log_file(self.operation_logs)
