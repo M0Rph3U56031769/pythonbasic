@@ -19,7 +19,7 @@ class DataHandler:
 
     def write_data(self):
         with open(self.json_path, "w", encoding="utf-8") as fp:
-            json.dump(self.inventory, fp)
+            json.dump(self.inventory, fp, indent=4)
 
     def __get_item(self, name: str) -> (int, str, int):
         for i, item in enumerate(self.inventory["menu_items"]):
