@@ -20,4 +20,4 @@ class Logger:
     def log(self, data: dict):
         self.log_data[str(datetime.utcnow())] = data
         with open(self.json_path, "w") as fp:
-            json.dump(self.log_data, fp)
+            json.dump(self.log_data, fp, indent=4)

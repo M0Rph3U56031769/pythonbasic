@@ -22,7 +22,12 @@ class MenuHandler:
         self.__start_menu()
 
     def __get_name_price_input(self) -> [str, int]:
-        item_name = input("Please give me the name of the item: ")
+        while True:
+            item_name = input("Please give me the name of the item: ")
+            if item_name == "":
+                print("You must enter an item name")
+            else:
+                break
         while True:
             try:
                 item_price = int(input("Please give me the price of the item: "))
@@ -69,7 +74,8 @@ class MenuHandler:
             self.exception_logger.log({"msg": str(ve)})
             print(str(ve))
             while True:
-                yes_no = input("Do you want to update the price of the item? (y/n): ")
+                yes_no = input("Do you want to update the price of the item? (y/n, defaults to n): ") or "n"
+                yes_no = yes_no.lower().strip()
                 if yes_no == "n":
                     self.operation_logger.log({
                         "name": self.name, "operation": "item_add",
@@ -97,7 +103,8 @@ class MenuHandler:
             self.exception_logger.log({"msg": str(ve)})
             print(str(ve))
             while True:
-                yes_no = input("Do you want to add is as a new item? (y/n): ")
+                yes_no = input("Do you want to add is as a new item? (y/n, defaults to n): ") or "n"
+                yes_no = yes_no.lower().strip()
                 if yes_no == "n":
                     self.operation_logger.log({
                         "name": self.name, "operation": "item_update",
