@@ -136,10 +136,3 @@ class MenuHandler:
         print("Exiting warehouse")
         self.data_handler.write_data()
         sys.exit()
-
-
-if __name__ == "__main__":
-    handler = MenuHandler()
-    handler.start_menu()
-    handler.add_menu()
-    handler.update_menu()

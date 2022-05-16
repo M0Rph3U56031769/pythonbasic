@@ -21,8 +21,3 @@ class Logger:
         self.log_data[str(datetime.utcnow())] = data
         with open(self.json_path, "w") as fp:
             json.dump(self.log_data, fp)
-
-
-if __name__ == "__main__":
-    wh = Logger(r"C:\Users\vcsok\Desktop\pythonbasic\vcsokwarehouse\logs.json")
-    wh.log({"valami": "valami"})

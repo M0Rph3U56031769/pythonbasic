@@ -58,10 +58,3 @@ class DataHandler:
             raise ValueError("Item not found with given name")
         self.write_data()
         return msg, prev_price
-
-
-if __name__ == "__main__":
-    data_handler = DataHandler(json_path=r"C:\Users\vcsok\Desktop\pythonbasic\vcsokwarehouse\data\data.json")
-    data_handler.load_data()
-    print(data_handler.update_item("Sanyika", 4234234))
-    print(data_handler.delete_item("salami"))
