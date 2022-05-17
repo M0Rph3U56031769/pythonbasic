@@ -12,7 +12,7 @@
             }
         }
     ],
-    "2022-05-13 13:32:50.593063": [
+    "2022-05-16 11:52:37.419928": [
         {
             "username": "abaeck"
         },
@@ -21,11 +21,38 @@
         },
         {
             "values": {
-                "new_item2": 300000
+                "test_record": 10
             }
         }
     ],
-    "2022-05-13 13:33:10.640938": [
+    "2022-05-16 15:38:13.625356": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 15:38:55.497852": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 15:40:41.980070": [
         {
             "username": "abaeck"
         },
@@ -34,11 +61,11 @@
         },
         {
             "values": {
-                "new_item3": 1232132
+                "7": 12323
             }
         }
     ],
-    "2022-05-13 14:02:42.755797": [
+    "2022-05-16 15:40:50.963958": [
         {
             "username": "abaeck"
         },
@@ -46,134 +73,17 @@
             "operation": "update record"
         },
         {
-            "old values": {
-                "lopaci": 300
-            },
-            "new values": {
-                "lopaci": 300
+            "old_values": {
+                "new": 43234234324
             }
-        }
-    ],
-    "2022-05-13 14:06:39.500948": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
-        },
-        {
-            "old values": {
-                "lopaci": 1230
-            },
-            "new values": {
-                "lopaci": 1230
-            }
-        }
-    ],
-    "2022-05-13 14:08:38.526520": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "new record"
-        },
-        {
-            "values": {
-                "lo": 123
-            }
-        }
-    ],
-    "2022-05-13 14:08:44.366219": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
-        },
-        {
-            "old values": {
-                "lopaci": 300
-            },
-            "new values": {
-                "lopaci": 300
-            }
-        }
-    ],
-    "2022-05-13 14:09:05.422662": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
-        },
-        {
-            "old values": {
-                "lopaci": 0
-            },
-            "new values": {
-                "lopaci": 0
-            }
-        }
-    ],
-    "2022-05-13 14:14:12.928283": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
-        },
-        {
-            "old values": {
-                "lopaci": 3030
-            },
-            "new values": {
-                "lopaci": 3030
-            }
-        }
-    ],
-    "2022-05-13 14:17:15.648743": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
-        },
-        {
-            "old values": {
-                "lopaci": 123123123123213
-            },
-            "new values": {
-                "lopaci": 123123123123213
-            }
-        }
-    ],
-    "2022-05-13 14:33:15.686367": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
-        },
-        {
-            "values": {
-                "lopaci": 12333
-            }
-        }
-    ],
-    "2022-05-13 14:33:47.013709": [
-        {
-            "username": "abaeck"
-        },
-        {
-            "operation": "update record"
         },
         {
             "new values": {
-                "lopaci": 123123213213
+                "new": 30000
             }
         }
     ],
-    "2022-05-13 15:00:12.095098": [
+    "2022-05-16 15:45:30.860561": [
         {
             "username": "abaeck"
         },
@@ -185,15 +95,24 @@
         },
         {
             "deleted values": {
-                "10": {
-                    "new_item3": 1232132
-                }
+                "null": null
             }
         }
     ],
-    "2022-05-14 21:09:49.166850": [
+    "2022-05-16 15:45:30.860999": [
         {
-            "username": "Andris"
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 15:48:30.069410": [
+        {
+            "username": "abaeck"
         },
         {
             "operation": "delete record"
@@ -203,28 +122,269 @@
         },
         {
             "deleted values": {
-                "2": {
-                    "test_item": 3000
-                }
+                "null": null
             }
         }
     ],
-    "2022-05-15 22:12:49.259087": [
+    "2022-05-16 15:48:30.069955": [
         {
-            "username": "Andris"
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 15:49:27.798595": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 15:49:27.799160": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 15:53:11.689083": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 15:53:41.897987": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "new": 30000
+            }
+        }
+    ],
+    "2022-05-16 15:54:19.249769": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "7": 12323
+            }
+        }
+    ],
+    "2022-05-16 16:04:26.981921": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdasdsa": 123
+            }
+        }
+    ],
+    "2022-05-16 16:04:31.757746": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "dsfsdfds": 1332
+            }
+        }
+    ],
+    "2022-05-16 16:04:34.757714": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "éqw.ew": 1
+            }
+        }
+    ],
+    "2022-05-16 16:08:25.934834": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "éqw.ew": 1
+            }
+        }
+    ],
+    "2022-05-16 16:09:07.567198": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "dsfsdfds": 1332
+            }
+        }
+    ],
+    "2022-05-16 16:09:15.063427": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asd": 100
+            }
+        }
+    ],
+    "2022-05-16 16:09:18.407297": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdasd": 21
+            }
+        }
+    ],
+    "2022-05-16 16:09:21.958798": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdasdasd": 123
+            }
+        }
+    ],
+    "2022-05-16 16:09:29.399326": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdasdasdasd": 12322
+            }
+        }
+    ],
+    "2022-05-16 16:09:41.303215": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": true
+        },
+        {
+            "deleted values": {
+                "null": null
+            }
+        }
+    ],
+    "2022-05-16 16:10:10.551251": [
+        {
+            "username": "abaeck"
         },
         {
             "operation": "update record"
         },
         {
+            "old_values": {
+                "asd": 100
+            }
+        },
+        {
             "new values": {
-                "asd": 30001000
+                "asd": 100
             }
         }
     ],
-    "2022-05-15 23:10:18.736276": [
+    "2022-05-16 16:10:15.823615": [
         {
-            "username": "Andris"
+            "username": "abaeck"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "asdasd": 21
+            }
+        },
+        {
+            "new values": {
+                "asdasd": 3
+            }
+        }
+    ],
+    "2022-05-16 16:10:34.367872": [
+        {
+            "username": "abaeck"
         },
         {
             "operation": "delete record"
@@ -234,110 +394,65 @@
         },
         {
             "deleted values": {
-                "new_item2": 300000
+                "null": null
             }
         }
     ],
-    "2022-05-15 23:19:22.286197": [
+    "2022-05-16 16:13:53.089764": [
         {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "lopacika": 20000
-            }
-        }
-    ],
-    "2022-05-15 23:20:54.772810": [
-        {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "test": 10
+                "3": 123
             }
         }
     ],
-    "2022-05-15 23:20:59.048319": [
+    "2022-05-16 16:15:02.394394": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "test2": 2000
+                "c": 300
             }
         }
     ],
-    "2022-05-15 23:21:03.771902": [
+    "2022-05-16 16:16:05.298748": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "test3": 3213
+                "new": 300
             }
         }
     ],
-    "2022-05-15 23:21:07.597792": [
+    "2022-05-16 16:16:18.379363": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "test4": 231333
+                "new 2": 1000
             }
         }
     ],
-    "2022-05-15 23:21:15.496873": [
+    "2022-05-16 16:17:19.579444": [
         {
-            "username": "Andris"
-        },
-        {
-            "operation": "new record"
-        },
-        {
-            "values": {
-                "test6": 40000
-            }
-        }
-    ],
-    "2022-05-15 23:21:28.381750": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "test6": 40000
-            }
-        }
-    ],
-    "2022-05-15 23:23:48.552336": [
-        {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "delete record"
@@ -346,334 +461,105 @@
             "success": false
         }
     ],
-    "2022-05-15 23:24:29.922235": [
+    "2022-05-16 16:17:57.844480": [
         {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": false
-        }
-    ],
-    "2022-05-15 23:26:21.516553": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": false
-        }
-    ],
-    "2022-05-15 23:26:41.524170": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": false
-        }
-    ],
-    "2022-05-15 23:26:43.627022": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": false
-        }
-    ],
-    "2022-05-15 23:27:08.762612": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": false
-        }
-    ],
-    "2022-05-15 23:27:39.078205": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "test4": 231333
-            }
-        }
-    ],
-    "2022-05-15 23:47:14.913611": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "asd": 30001000
-            }
-        }
-    ],
-    "2022-05-15 23:50:07.641201": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "test": 10
-            }
-        }
-    ],
-    "2022-05-15 23:54:16.646811": [
-        {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "testka": 12323
+                "asd": 200
             }
         }
     ],
-    "2022-05-15 23:54:25.344909": [
+    "2022-05-16 16:18:20.484527": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "testasd": 30013
+                "daasd": 123
             }
         }
     ],
-    "2022-05-15 23:54:37.352491": [
+    "2022-05-16 16:19:52.008896": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "test": 321
+                "new": 30
             }
         }
     ],
-    "2022-05-15 23:55:14.006289": [
+    "2022-05-16 16:20:03.944437": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "asddsa": 30
+                "new2": 32
             }
         }
     ],
-    "2022-05-15 23:55:23.161163": [
+    "2022-05-16 16:20:11.089087": [
         {
-            "username": "Andris"
+            "username": "abaeck"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "new": 30
+            }
+        },
+        {
+            "new values": {
+                "new": 4
+            }
+        }
+    ],
+    "2022-05-16 16:20:29.112104": [
+        {
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "new": 31
+                "asdkasd": 32
             }
         }
     ],
-    "2022-05-15 23:55:38.542370": [
+    "2022-05-16 16:20:55.329413": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "new record"
         },
         {
             "values": {
-                "3213": 3
+                "édfd": 3123
             }
         }
     ],
-    "2022-05-16 00:09:41.085689": [
+    "2022-05-16 16:21:03.873140": [
         {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "test_item": 3000
-            }
-        }
-    ],
-    "2022-05-16 00:09:58.669178": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "testka": 12323
-            }
-        }
-    ],
-    "2022-05-16 00:10:36.769155": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "testka": 12323
-            }
-        }
-    ],
-    "2022-05-16 00:11:30.499290": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "testka": 12323
-            }
-        }
-    ],
-    "2022-05-16 00:12:12.283132": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "testka": 12323
-            }
-        }
-    ],
-    "2022-05-16 00:19:57.747047": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
-            }
-        }
-    ],
-    "2022-05-16 00:23:28.764184": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
-            }
-        }
-    ],
-    "2022-05-16 00:23:44.550536": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
-            }
-        }
-    ],
-    "2022-05-16 00:26:17.411845": [
-        {
-            "username": "Andris"
-        },
-        {
-            "operation": "delete record"
-        },
-        {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
-            }
-        }
-    ],
-    "2022-05-16 00:26:45.431814": [
-        {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "delete record"
@@ -682,105 +568,92 @@
             "success": false
         }
     ],
-    "2022-05-16 00:29:02.227571": [
+    "2022-05-16 16:25:20.523884": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "new record"
         },
         {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
+            "values": {
+                "qwe": 3012
             }
         }
     ],
-    "2022-05-16 00:29:58.325842": [
+    "2022-05-16 16:25:24.653077": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "new record"
         },
         {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
+            "values": {
+                "rew": 234
             }
         }
     ],
-    "2022-05-16 00:31:03.532533": [
+    "2022-05-16 16:25:29.316369": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "update record"
         },
         {
-            "success": true
+            "old_values": {
+                "qwe": 3012
+            }
         },
         {
-            "deleted values": {
-                "null": null
+            "new values": {
+                "qwe": 32
             }
         }
     ],
-    "2022-05-16 00:32:30.777783": [
+    "2022-05-16 16:25:35.308947": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "new record"
         },
         {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
+            "values": {
+                "sdf": 3242
             }
         }
     ],
-    "2022-05-16 00:32:44.160159": [
+    "2022-05-16 16:25:39.389398": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "new record"
         },
         {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
+            "values": {
+                "qwed": 243242
             }
         }
     ],
-    "2022-05-16 00:33:54.111662": [
+    "2022-05-16 16:25:48.693488": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "new record"
         },
         {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
+            "values": {
+                "dqwdas": 3
             }
         }
     ],
-    "2022-05-16 00:33:54.116724": [
+    "2022-05-16 16:25:57.325032": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
             "operation": "delete record"
@@ -789,31 +662,548 @@
             "success": false
         }
     ],
-    "2022-05-16 00:34:19.811735": [
+    "2022-05-16 16:29:22.183577": [
         {
-            "username": "Andris"
+            "username": "abaeck"
         },
         {
-            "operation": "delete record"
+            "operation": "new record"
         },
         {
-            "success": true
-        },
-        {
-            "deleted values": {
-                "null": null
+            "values": {
+                "new": 321
             }
         }
     ],
-    "2022-05-16 00:34:19.817720": [
+    "2022-05-16 16:29:31.391411": [
         {
-            "username": "Andris"
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdc": 32
+            }
+        }
+    ],
+    "2022-05-16 16:29:47.257741": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdí": 1230
+            }
+        }
+    ],
+    "2022-05-16 16:29:54.870755": [
+        {
+            "username": "abaeck"
         },
         {
             "operation": "delete record"
         },
         {
             "success": false
+        }
+    ],
+    "2022-05-16 16:31:53.441498": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asd": 123
+            }
+        }
+    ],
+    "2022-05-16 16:31:59.370230": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asdasd": 123
+            }
+        }
+    ],
+    "2022-05-16 16:32:22.186736": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "lopaci": 321
+            }
+        }
+    ],
+    "2022-05-16 16:32:32.265987": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "delete record"
+        },
+        {
+            "success": false
+        }
+    ],
+    "2022-05-16 16:32:56.714467": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "asd": 123
+            }
+        },
+        {
+            "new values": {
+                "asd": 321
+            }
+        }
+    ],
+    "2022-05-16 16:35:14.839212": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "assdsdddd": 300
+            }
+        }
+    ],
+    "2022-05-16 16:35:17.711486": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "weokqoewk": 32113
+            }
+        }
+    ],
+    "2022-05-16 16:35:22.431893": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "wqeasda": 203
+            }
+        }
+    ],
+    "2022-05-16 16:37:38.205095": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "la": 30
+            }
+        }
+    ],
+    "2022-05-16 16:37:48.661350": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "kka": 3123
+            }
+        }
+    ],
+    "2022-05-16 16:37:51.437450": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "lskdfpdsf": 321
+            }
+        }
+    ],
+    "2022-05-16 16:37:54.637507": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "sdfsdfok": 321
+            }
+        }
+    ],
+    "2022-05-16 16:38:02.421066": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "sodkfsof": 123213
+            }
+        }
+    ],
+    "2022-05-16 16:38:21.211791": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "sdf": 123
+            }
+        }
+    ],
+    "2022-05-16 16:38:44.243286": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "asd": 321
+            }
+        },
+        {
+            "new values": {
+                "asd": 123
+            }
+        }
+    ],
+    "2022-05-16 16:38:49.420555": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "3": 123
+            }
+        }
+    ],
+    "2022-05-17 11:05:40.482194": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "    ": -1
+            }
+        }
+    ],
+    "2022-05-17 11:05:57.562739": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "\\n": 34
+            }
+        }
+    ],
+    "2022-05-17 11:06:38.178746": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "\u001b[A": 34
+            }
+        }
+    ],
+    "2022-05-17 11:07:21.963336": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asadasd": 43
+            }
+        }
+    ],
+    "2022-05-17 11:07:56.939915": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "4444.": 0
+            }
+        }
+    ],
+    "2022-05-17 11:08:42.507548": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "234324": 34
+            }
+        }
+    ],
+    "2022-05-17 11:08:55.299219": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "\\n": 34
+            }
+        }
+    ],
+    "2022-05-17 11:08:59.475844": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "\u001b[A": 34
+            }
+        }
+    ],
+    "2022-05-17 11:48:06.018670": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "name": 123
+            }
+        }
+    ],
+    "2022-05-17 11:50:46.588233": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj1": 123
+            }
+        }
+    ],
+    "2022-05-17 11:50:52.060761": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj2": 123
+            }
+        }
+    ],
+    "2022-05-17 11:51:42.108902": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj1": 123
+            }
+        }
+    ],
+    "2022-05-17 11:51:48.404067": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uk": 321
+            }
+        }
+    ],
+    "2022-05-17 11:53:01.884542": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj1": 123
+            }
+        }
+    ],
+    "2022-05-17 11:53:41.924767": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj": 3211
+            }
+        }
+    ],
+    "2022-05-17 11:53:53.077369": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "uj": 3211
+            }
+        },
+        {
+            "new values": {
+                "uj": 2
+            }
+        }
+    ],
+    "2022-05-17 11:54:10.565360": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj2": 321111
+            }
+        }
+    ],
+    "2022-05-17 11:58:03.445365": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj3": 3123
+            }
+        }
+    ],
+    "2022-05-17 11:58:25.037071": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "uj4": 432
+            }
+        }
+    ],
+    "2022-05-17 11:58:41.485285": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "kk": 32133
+            }
+        }
+    ],
+    "2022-05-17 12:48:23.099551": [
+        {
+            "username": "abaeck"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asd": 321
+            }
         }
     ]
 }

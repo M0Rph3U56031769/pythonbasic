@@ -29,7 +29,7 @@ class DataHandling:
         with open(file_path, mode="r", encoding="utf-8") as json_file:
             inventory = json.load(json_file)
             counter = 0
-            for i in inventory:
+            for items in inventory:
                 counter += 1
         return counter
 
@@ -59,7 +59,6 @@ class DataHandling:
             return current_prod_name
         except UnboundLocalError:
             print("There is no such record in the database")
-
 
     @staticmethod
     def get_product_value(product_id, inventory):

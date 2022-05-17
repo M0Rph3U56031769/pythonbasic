@@ -87,21 +87,21 @@ class AddOrUpdate:
         return self.inventory
 
     def update_product(self, product_name, product_value):
-        key_list = list(self.inventory.keys())
-        val_list = list(self.inventory.values())
         """
         Updates a record if it is in the store already
         :param: product_name, product_value
         :return: self.inventory
         """
 
+        key_list = list(self.inventory.keys())
+        val_list = list(self.inventory.values())
         for k, v in self.inventory.items():
             pos = val_list.index(v)
             product_id = key_list[pos]
-
             if product_name == list(v)[0]:
+                old_values = self.get_old_values_for_update(product_id, self.inventory)
                 self.inventory[product_id] = {product_name: product_value}
-        self.logger.log_update(product_name, product_value)
+        self.logger.logexception_logs_update(product_name, product_value, old_values)
 
         return self.inventory
 
@@ -135,3 +135,10 @@ class AddOrUpdate:
             print("*" * 50 + "\nProduct is not in database. CREATING new product in database")
 
         return to_be_updated
+
+    def get_old_values_for_update(self, product_id, inventory):
+
+        old_name = self.handler.get_product_name(product_id, inventory)
+        old_value = self.handler.get_product_value(product_id, inventory)
+
+        return {old_name: old_value}

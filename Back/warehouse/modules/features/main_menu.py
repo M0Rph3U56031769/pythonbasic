@@ -3,7 +3,6 @@ from .delete_product import DeleteProduct
 from .list_products import ListProducts
 from .exit import Exit
 
-
 class MainMenu:
     @staticmethod
     def selector() -> None:

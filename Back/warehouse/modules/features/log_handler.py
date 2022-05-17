@@ -33,6 +33,7 @@ class LogHandler:
         file_path = os.path.join(ROOT_DIR, "../logs/exceptions.log.json")
         with open(file=file_path, mode="w", encoding="utf-8") as json_file:
             json.dump(ex_log_data, json_file, ensure_ascii=False, indent=4)
+            json_file.write(str(ex_log_data))
             json_file.write("\n")
 
 
