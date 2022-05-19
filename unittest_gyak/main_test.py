@@ -16,11 +16,11 @@ class TestStringMethods(unittest.TestCase):
         self.assertFalse('Foo'.isupper())
 
     def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
+        text = 'hello world'
+        self.assertEqual(text.split(), ['hello', 'world'])
         # check that s.split fails when the separator is not a string
         with self.assertRaises(TypeError):
-            s.split(2)
+            text.split(2)
 
     def tearDown(self) -> None:
         print("Ending the tests... You can close network connections and such things Bye!")
