@@ -4,17 +4,15 @@ class Arguments:
     def concatenate(**kwargs):
         result = ""
         # Iterating over the Python kwargs dictionary
-        for arg in kwargs.values():
-            result += arg
-        return result
+        return result.join(kwargs.values())
 
     @staticmethod
     def my_sum(*args, extra: int = 0):
         result = 0
         print(extra)
         # Iterating over the Python args tuple
-        for x in args:
-            result += x
+        for arg in args:
+            result += arg
         return result
 
 
