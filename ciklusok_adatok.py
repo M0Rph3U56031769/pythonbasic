@@ -61,7 +61,7 @@ def while_true():
         time.sleep(1)
         if str(9) in str(timestamp):
             break
-    return
+    return True
 
 
 while_true()
