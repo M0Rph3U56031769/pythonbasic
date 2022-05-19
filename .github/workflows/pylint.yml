@@ -21,4 +21,4 @@ jobs:
         pip install -r requirements.txt -v
     - name: Analysing the code with pylint
       run: |
-        pylint $(find . -name "*.py" | xargs) --disable=C0114 --disable=C0115 --disable=C0116
+        pylint $(find . -name "*.py" | xargs) --disable=C0114 --disable=C0115 --disable=C0116 --disable=E0401
