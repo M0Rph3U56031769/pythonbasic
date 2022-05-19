@@ -45,7 +45,7 @@ def list_and_for_cycle():
     print("\n")
     for index, ELEM in enumerate(test_list):
         if type(ELEM) == list:
-            print(f"This is a list:")
+            print("This is a list:")
             for i, e in enumerate(ELEM):
                 print(f"\t{i}: {e}")
             print("-"*50)
