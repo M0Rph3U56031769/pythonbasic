@@ -6,8 +6,8 @@ from feature import Feature
 class MainClass:
 
     def __init__(self):
-        FeatureInstance = Feature()
-        FeatureInstance.print_line()
+        feature_instance = Feature()
+        feature_instance.print_line()
 
     @staticmethod
     def print_message():
