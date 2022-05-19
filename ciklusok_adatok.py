@@ -44,7 +44,7 @@ def list_and_for_cycle():
 
     print("\n")
     for index, ELEM in enumerate(test_list):
-        if type(ELEM) == list:
+        if isinstance(ELEM, list):
             print("This is a list:")
             for index_elem, element in enumerate(ELEM):
                 print(f"\t{index_elem}: {element}")
@@ -63,8 +63,5 @@ def while_true():
             break
     return
 
-
-# dict_test()
-# list_and_for_cycle()
 
 while_true()
