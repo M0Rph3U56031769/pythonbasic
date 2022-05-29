@@ -1205,5 +1205,202 @@
                 "asd": 321
             }
         }
+    ],
+    "2022-05-23 22:55:13.919509": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "ad": 30
+            }
+        }
+    ],
+    "2022-05-29 23:24:25.169259": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "kkk": 2133
+            }
+        }
+    ],
+    "2022-05-29 23:24:39.649873": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "kal": 3211
+            }
+        }
+    ],
+    "2022-05-29 23:32:00.436237": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "kkk": 2133
+            }
+        },
+        {
+            "new values": {
+                "kkk": 42322
+            }
+        }
+    ],
+    "2022-05-29 23:35:27.609240": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "kkk": 42322
+            }
+        },
+        {
+            "new values": {
+                "kkk": 10
+            }
+        }
+    ],
+    "2022-05-29 23:37:12.089142": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "update record"
+        },
+        {
+            "old_values": {
+                "kkk": 10
+            }
+        },
+        {
+            "new values": {
+                "kkk": 30
+            }
+        }
+    ],
+    "2022-05-29 23:37:42.636456": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "1": 30
+            }
+        }
+    ],
+    "2022-05-29 23:38:12.054284": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "laci": 3100
+            }
+        }
+    ],
+    "2022-05-29 23:38:30.322383": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "hello": 123
+            }
+        }
+    ],
+    "2022-05-29 23:38:47.248310": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "bandi": 312313
+            }
+        }
+    ],
+    "2022-05-29 23:39:42.155097": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "add": 3000
+            }
+        }
+    ],
+    "2022-05-29 23:40:30.235414": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "asddd": 3000
+            }
+        }
+    ],
+    "2022-05-29 23:41:01.981230": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "ewrewr": 3000
+            }
+        }
+    ],
+    "2022-05-29 23:41:20.523850": [
+        {
+            "username": "Andris"
+        },
+        {
+            "operation": "new record"
+        },
+        {
+            "values": {
+                "sadddd": 34234
+            }
+        }
     ]
 }

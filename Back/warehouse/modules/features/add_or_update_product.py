@@ -52,10 +52,6 @@ class AddOrUpdate:
                 continue
             if type(product_value) != int:
                 print("Value must be a number!\n" + "*" * 50)
-            else:
-                print(f"SUCCESSFUL ADDITION\nThe new product is:  and its value is: {product_value}\n"
-                      + "*" * 50
-                      )
             break
 
         return product_value
@@ -101,7 +97,8 @@ class AddOrUpdate:
             if product_name == list(v)[0]:
                 old_values = self.get_old_values_for_update(product_id, self.inventory)
                 self.inventory[product_id] = {product_name: product_value}
-        self.logger.logexception_logs_update(product_name, product_value, old_values)
+                print(f"Successful update. New values: {product_name}, {product_value}")
+        self.logger.log_update(product_name, product_value, old_values)
 
         return self.inventory
 
