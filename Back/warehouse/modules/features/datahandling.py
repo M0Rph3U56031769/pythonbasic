@@ -1,6 +1,7 @@
 import json
 import os
 
+
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -10,25 +11,25 @@ class DataHandling:
 
     def read_json(self):
 
-        file_path = os.path.join(ROOT_DIR, "data.json")
+        file_path = os.path.join(ROOT_DIR, "../data/data.json")
         with open(file_path, mode="r", encoding="utf-8") as json_file:
             self.data = json.load(json_file)
         return self.data
 
     @staticmethod
     def write_json(data):
-        file_path = os.path.join(ROOT_DIR, "data.json")
+        file_path = os.path.join(ROOT_DIR, "../data/data.json")
         with open(file=file_path, mode="w", encoding="utf-8") as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
             json_file.write("\n")
 
     @staticmethod
     def product_counter():
-        file_path = os.path.join(ROOT_DIR, "data.json")
+        file_path = os.path.join(ROOT_DIR, "../data/data.json")
         with open(file_path, mode="r", encoding="utf-8") as json_file:
             inventory = json.load(json_file)
             counter = 0
-            for i in inventory:
+            for items in inventory:
                 counter += 1
         return counter
 
@@ -47,3 +48,25 @@ class DataHandling:
             for key in inventory[ids]:
                 print(key)
         print(product_name_list)
+
+    @staticmethod
+    def get_product_name(product_id, inventory):
+        try:
+            for current_id, product in inventory.items():
+                if current_id == product_id:
+                    for product_name, product_value in product.items():
+                        current_prod_name = product_name
+            return current_prod_name
+        except UnboundLocalError:
+            print("There is no such record in the database")
+
+    @staticmethod
+    def get_product_value(product_id, inventory):
+        try:
+            for current_id, product in inventory.items():
+                if current_id == product_id:
+                    for product_name, product_value in product.items():
+                        current_prod_value = product_value
+            return current_prod_value
+        except UnboundLocalError:
+            pass

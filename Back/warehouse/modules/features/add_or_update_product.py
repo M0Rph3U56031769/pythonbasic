@@ -1,9 +1,11 @@
 from .datahandling import DataHandling
+from .logger import Logger
 
 
 class AddOrUpdate:
     handler = DataHandling()
     inventory = handler.read_json()
+    logger = Logger()
 
     def create_unique_id(self):
         """
@@ -21,7 +23,7 @@ class AddOrUpdate:
         return product_id
 
     @staticmethod
-    def get_product_name():
+    def get_product_name_from_user():
         """
         Get name of the product from input
         :param:
@@ -34,7 +36,7 @@ class AddOrUpdate:
         return product_name
 
     @staticmethod
-    def get_product_value():
+    def get_product_value_from_user():
         """
         Get value of the product from input - only int is valid
         :param:
@@ -50,10 +52,6 @@ class AddOrUpdate:
                 continue
             if type(product_value) != int:
                 print("Value must be a number!\n" + "*" * 50)
-            else:
-                print(f"SUCCESSFUL ADDITION\nThe new product is:  and its value is: {product_value}\n"
-                      + "*" * 50
-                      )
             break
 
         return product_value
@@ -65,11 +63,11 @@ class AddOrUpdate:
         :return: product_value
         """
 
-        product_name = self.get_product_name()
+        product_name = self.get_product_name_from_user()
         if self.decide_upgrading(product_name):
-            self.upgrade_product(product_name, self.get_product_value())
+            self.update_product(product_name, self.get_product_value_from_user())
         else:
-            self.create_product(product_name, self.get_product_value())
+            self.create_product(product_name, self.get_product_value_from_user())
         self.handler.write_json(self.inventory)
 
     def create_product(self, product_name, product_value):
@@ -81,23 +79,26 @@ class AddOrUpdate:
 
         product_id = self.create_unique_id()
         self.inventory[product_id] = {product_name: product_value}
+        self.logger.log_new_record(product_name, product_value)
         return self.inventory
 
-    def upgrade_product(self, product_name, product_value):
-        key_list = list(self.inventory.keys())
-        val_list = list(self.inventory.values())
+    def update_product(self, product_name, product_value):
         """
         Updates a record if it is in the store already
         :param: product_name, product_value
         :return: self.inventory
         """
 
+        key_list = list(self.inventory.keys())
+        val_list = list(self.inventory.values())
         for k, v in self.inventory.items():
             pos = val_list.index(v)
             product_id = key_list[pos]
-
             if product_name == list(v)[0]:
+                old_values = self.get_old_values_for_update(product_id, self.inventory)
                 self.inventory[product_id] = {product_name: product_value}
+                print(f"Successful update. New values: {product_name}, {product_value}")
+        self.logger.log_update(product_name, product_value, old_values)
 
         return self.inventory
 
@@ -131,3 +132,10 @@ class AddOrUpdate:
             print("*" * 50 + "\nProduct is not in database. CREATING new product in database")
 
         return to_be_updated
+
+    def get_old_values_for_update(self, product_id, inventory):
+
+        old_name = self.handler.get_product_name(product_id, inventory)
+        old_value = self.handler.get_product_value(product_id, inventory)
+
+        return {old_name: old_value}
