@@ -8,12 +8,12 @@ class DataHandler:
 
     def __init__(self, json_path: str):
         self.json_path = json_path
-        self.employee_dict = dict()
+        self.employee_dict = {}
         self.load_data()
 
     def load_data(self):
         if not os.path.exists(self.json_path):
-            if self.employee_dict is {}:
+            if self.employee_dict == {}:
                 self.employee_dict = {"employee_list": []}
         else:
             with open(self.json_path, "r", encoding="utf-8") as fp:
@@ -89,7 +89,7 @@ class DataHandler:
                 if value is None and key != "description":
                     continue
                 else:
-                    self.employee_dict["employee_list"][i][key] = value
+                    setattr(self.employee_dict["employee_list"][i], key, value)
         else:
             raise ValueError("Item not found with given name")
         self.write_data()
@@ -98,7 +98,8 @@ class DataHandler:
 
 if __name__ == "__main__":
     handler = DataHandler(
-        json_path=os.path.join(r"C:\\Users\\vcsok\\Desktop\\pythonbasic\\vcsok_hr_task\\", "data", "employee.json")
+        json_path=os.path.join(
+            r"C:\\Users\\vcsok\\Desktop\\pythonbasic\\vcsok_hr_task\\", "data", "employee.json")
     )
-    handler.add_item("sa", "1998.04.25", "CEO", "valami", "pwd", "phone_num", "desc")
+    handler.update_item("sa", "1998.04.26", "CEO", "valami", "pwd", "phone_num", "desc")
     print(handler.employee_dict)
