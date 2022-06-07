@@ -2,6 +2,7 @@ import unittest
 from datetime import datetime
 from employee import Employee
 
+
 class MyTestCase(unittest.TestCase):
     def test_parsing(self):
         empl = Employee.parse_employee({

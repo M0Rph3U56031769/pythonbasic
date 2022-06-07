@@ -11,7 +11,7 @@
         },
         {
             "name": "sa",
-            "birth_day": "1998-04-25T00:00:00",
+            "birth_day": "1998.04.26",
             "position": "CEO",
             "organisation": "valami",
             "password": "pwd",
