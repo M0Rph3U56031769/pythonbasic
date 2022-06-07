@@ -1,0 +1,22 @@
+{
+    "employee_list": [
+        {
+            "name": "sanyika",
+            "birth_day": "1998-04-25T00:00:00",
+            "position": "CEO",
+            "organisation": "valami",
+            "password": "pwd",
+            "phone_number": "phone_num",
+            "description": "desc"
+        },
+        {
+            "name": "sa",
+            "birth_day": "1998-04-25T00:00:00",
+            "position": "CEO",
+            "organisation": "valami",
+            "password": "pwd",
+            "phone_number": "phone_num",
+            "description": "desc"
+        }
+    ]
+}
