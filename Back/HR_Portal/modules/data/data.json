@@ -1,0 +1,22 @@
+{
+    "name": [
+        {
+            "birthday": "bd"
+        },
+        {
+            "position": "pos"
+        },
+        {
+            "organization": "org"
+        },
+        {
+            "password": "pw"
+        },
+        {
+            "description": "desc"
+        },
+        {
+            "phone_number": "num"
+        }
+    ]
+}
