@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "Bodonyi D",
+        "birthday": "1998.05.30",
+        "position": "Software Engineer",
+        "organisation": "Heitec",
+        "password": "asd",
+        "description": "Under 25",
+        "phone_number": "06308539755"
+    },
+    "2": {
+        "name": "wew",
+        "birthday": "1111.11.11",
+        "position": "sdsd",
+        "organisation": "rtrw",
+        "password": "qwert",
+        "description": "-",
+        "phone_number": "0521212121"
+    },
+    "3": {
+        "name": "kutya",
+        "birthday": "1998.05.20",
+        "position": "kutya",
+        "organisation": "dmhg",
+        "password": "12345",
+        "description": ".",
+        "phone_number": "1100320"
+    },
+    "4": {
+        "name": "Andras",
+        "birthday": "19998.0.030",
+        "position": "2323",
+        "organisation": "dgd",
+        "password": "2eafs",
+        "description": "f",
+        "phone_number": "fddcdsf"
+    }
+}
