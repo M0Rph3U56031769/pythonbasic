@@ -21,3 +21,12 @@ class Employee:
             else:
                 employee_dict[key] = value
         return Employee(**employee_dict)
+
+    def update_fields(self, update_dict):
+        for key, value in update_dict.items():
+            if value is None and key != "description":
+                continue
+            if key == "birth_day":
+                setattr(self, key, parser.parse(value))
+            else:
+                setattr(self, key, value)

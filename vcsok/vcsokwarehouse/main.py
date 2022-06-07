@@ -1,4 +1,4 @@
-from modules.menuhandler import MenuHandler
+from vcsok.vcsokwarehouse.modules.menuhandler import MenuHandler
 
 if __name__ == "__main__":
     menu_handler = MenuHandler()
