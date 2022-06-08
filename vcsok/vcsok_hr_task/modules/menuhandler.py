@@ -1,5 +1,7 @@
 import os
 import pathlib
+from typing import List, Optional
+from datetime import datetime
 from .datahandler import DataHandler
 from .loginhandler import LoginHandler
 
@@ -29,6 +31,11 @@ class MenuHandler:
             json_path=os.path.join(parent_path, "data", "users.json")
         )
 
+    def __get_employee_details(self) -> List[
+        str, datetime, str,
+        str, str, str, Optional[str]]:
+        pass
+
     def start_menu(self) -> None:
         print("*"*50)
         print("Hello in the HR Portal!")
@@ -49,9 +56,17 @@ class MenuHandler:
             user_level = 1
         print(f"Your current acces level is: {USER_LEVEL_DICT[user_level]}")
 
-    def main_menu(self):
+    def main_menu(self) -> int:
         possible_options = [1, 2, 3, 4, 5] if self.login_handler.current_user_level else [1, 2, 3]
 
         for item in possible_options:
             print(f"{item}. {MAIN_MENU_OPTIONS[item]}")
         option = input(f"Give your selection ({', '.join(list(map(lambda x: str(x), possible_options)))}): ").strip()
+        try:
+            return int(option)
+        except ValueError as e:
+            raise LookupError(
+                f"{option} is not valid. Available options: {', '.join(map(str, possible_options))}")
+
+    def add_menu(self) -> None:
+        pass
