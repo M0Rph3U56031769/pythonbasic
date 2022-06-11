@@ -13,6 +13,16 @@ class Employee:
     phone_number: str
     description: str = None
 
+    def __str__(self):
+        return \
+            f"""Name: {self.name}
+        Birth Day: {str(self.birth_day)}
+        Position: {self.position}
+        Organisation: {self.organisation}
+        Password: {self.password}
+        Phone Number: {self.phone_number}
+        Description: {self.description}"""
+
     @staticmethod
     def parse_employee(employee_dict):
         for key, value in employee_dict.items():
@@ -24,7 +34,7 @@ class Employee:
 
     def update_fields(self, update_dict):
         for key, value in update_dict.items():
-            if value is None and key != "description":
+            if value is "" and key != "description":
                 continue
             if key == "birth_day":
                 setattr(self, key, parser.parse(value))

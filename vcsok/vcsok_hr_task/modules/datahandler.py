@@ -32,10 +32,12 @@ class DataHandler:
             temp_inv = {k: vars(v) for k, v in self.employee_dict.items()}
             json.dump(temp_inv, fp, indent=4, default=self.json_serial)
 
-    def get_item(self, name: str) -> Dict[str, Employee]:
+    def get_item(self, name: str = None) -> Dict[str, Employee]:
         ret_dict = {}
         for key, item in self.employee_dict.items():
-            if item.name == name.lower():
+            if name is None:
+                ret_dict[key] = item
+            elif item.name.lower() == name.lower():
                 ret_dict[key] = item
         return ret_dict
 
