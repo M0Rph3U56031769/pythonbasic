@@ -34,6 +34,11 @@ class MenuHandler:
 
     @staticmethod
     def __get_name():
+        """
+        Asks for the employee name
+            Returns:
+                name (str): employee name
+        """
         while True:
             name = input("Please give employee name: ").strip()
             if name == "":
@@ -43,6 +48,12 @@ class MenuHandler:
 
     @staticmethod
     def __get_user_key(available_keys: list, action: str):
+        """
+        Asks for the uuid key of a user
+        Parameters:
+            available_keys (list): keys that are available so user input can be verified
+            action (str): action string to fill in prop message
+        """
         while True:
             employee_key = input(f"Please give the key of the employee you want to {action}: ").strip()
             if employee_key not in available_keys:
@@ -50,9 +61,15 @@ class MenuHandler:
             else:
                 return employee_key
 
-
     @staticmethod
-    def __get_birth_day(can_be_empty: bool = False):
+    def __get_birth_day(can_be_empty: bool = False) -> str:
+        """
+        Asks for the employee birthday with format verification
+            Parameters:
+                can_be_empty (bool): if True the value can be skipped
+            Returns:
+                (string): dateinput
+        """
         while True:
             birth_day = input("Please give employee birth day (YYYY/MM/DD): ").strip()
             if re.match("[0-9]{4}\/[0-9]{2}\/[0-9]{2}", birth_day):
@@ -63,7 +80,15 @@ class MenuHandler:
                 print("Invalid date format. Format must be (YYYY/MM/DD)")
 
     @staticmethod
-    def __get_basic_value(value_name: str, can_be_empty: bool = False):
+    def __get_basic_value(value_name: str, can_be_empty: bool = False) -> str:
+        """
+        Asks for the employee value with optional input
+            Parameters:
+                value_name (str): name of the employee value to fill the prop
+                can_be_empty (bool): if True the value can be skipped
+            Returns:
+                (string): user input
+        """
         while True:
             value = input(f"Please give employee {value_name}: ").strip()
             if value == "" and not can_be_empty:
@@ -72,6 +97,11 @@ class MenuHandler:
                 return value
 
     def __get_employee_details(self) -> Dict:
+        """
+        Asks for the employee details from the user with the fields not optional
+            Returns:
+                (dict): return input dictionary in Employee parsable format
+        """
         name = self.__get_name()
         birth_day = self.__get_birth_day()
         position = self.__get_basic_value("position")
@@ -87,6 +117,11 @@ class MenuHandler:
         }
 
     def __get_employee_details_optional(self) -> Dict:
+        """
+        Asks for the employee details from the user with the fields optional
+            Returns:
+                (dict): return input dictionary in Employee parsable format
+        """
         name = self.__get_name()
         birth_day = self.__get_birth_day(can_be_empty=True)
         position = self.__get_basic_value("position", can_be_empty=True)
@@ -102,6 +137,9 @@ class MenuHandler:
         }
 
     def start_menu(self) -> None:
+        """
+        Triggers the start menu
+        """
         print("*" * 50)
         print("Hello in the HR Portal!")
         name = input("Please give your name: ")
@@ -122,6 +160,9 @@ class MenuHandler:
         print(f"Your current acces level is: {USER_LEVEL_DICT[user_level]}")
 
     def main_menu(self) -> int:
+        """
+        Triggers the main menu
+        """
         possible_options = [0, 1, 2, 3, 4, 5] if self.login_handler.current_user_level else [0, 1, 2]
 
         for item in possible_options:
@@ -137,6 +178,9 @@ class MenuHandler:
                 f"{option} is not valid. Available options: {', '.join(map(str, possible_options))}")
 
     def add_menu(self) -> None:
+        """
+        Triggers the add menu
+        """
         print("Add Menu")
         employee_values = self.__get_employee_details()
         with_same_name = self.data_handler.get_item(employee_values["name"])
@@ -159,6 +203,11 @@ class MenuHandler:
             print("Added employee")
 
     def list_menu(self) -> Dict[str, Employee]:
+        """
+        Triggers the list menu
+            Returns:
+                (dict): Returns the available employees (uuid string, employee)
+        """
         print("Available employees:")
         available_employees = self.data_handler.get_item()
         if available_employees != {}:
@@ -171,6 +220,9 @@ class MenuHandler:
         return available_employees
 
     def update_menu(self) -> None:
+        """
+        Triggers the update menu
+        """
         print("Update Menu")
         available_employees = self.list_menu()
         if available_employees == {}:
@@ -184,6 +236,9 @@ class MenuHandler:
             print("Updated employee")
 
     def remove_menu(self):
+        """
+        Triggers the remove menu
+        """
         print("Remove Menu")
         available_employees = self.list_menu()
         if available_employees == {}:
@@ -199,6 +254,9 @@ class MenuHandler:
                 print("Skipping deletion")
 
     def search_menu(self):
+        """
+        Triggers the search menu
+        """
         print("Search Menu")
         name = self.__get_basic_value("name")
         available_employees = self.data_handler.get_item(name)
@@ -210,6 +268,3 @@ class MenuHandler:
                 print(employee)
         else:
             print("No employee found with given name")
-
-
-

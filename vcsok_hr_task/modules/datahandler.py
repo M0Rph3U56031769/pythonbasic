@@ -24,7 +24,6 @@ class DataHandler:
 
     @staticmethod
     def json_serial(obj):
-
         if isinstance(obj, (datetime, date)):
             return obj.isoformat()
         else:

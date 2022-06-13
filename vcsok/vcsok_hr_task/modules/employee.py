@@ -25,6 +25,13 @@ class Employee:
 
     @staticmethod
     def parse_employee(employee_dict):
+        """
+        Creates employee instance from dictionary
+            Parameters:
+                employee_dict (dict): dictionary with employee parameters
+            Returns:
+                (Employee): Employee instance
+        """
         for key, value in employee_dict.items():
             if key == "birth_day":
                 employee_dict[key] = parser.parse(value)
@@ -32,7 +39,14 @@ class Employee:
                 employee_dict[key] = value
         return Employee(**employee_dict)
 
-    def update_fields(self, update_dict):
+    def update_fields(self, update_dict) -> None:
+        """
+        Updates current employee instance from dictionary
+            Parameters:
+                update_dict (dict): dictionary with employee parameters
+            Returns:
+                None
+        """
         for key, value in update_dict.items():
             if value is "" and key != "description":
                 continue
