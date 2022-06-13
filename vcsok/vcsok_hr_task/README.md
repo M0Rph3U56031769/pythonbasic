@@ -1,0 +1,1 @@
+HR Portal task done. Maybe logging needed? (No specification was provided)

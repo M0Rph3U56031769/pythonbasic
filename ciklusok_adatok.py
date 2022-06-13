@@ -43,14 +43,14 @@ def list_and_for_cycle():
         print(f"{index}: {test_list[index]}")
 
     print("\n")
-    for index, ELEM in enumerate(test_list):
-        if type(ELEM) == list:
-            print(f"This is a list:")
-            for i, e in enumerate(ELEM):
-                print(f"\t{i}: {e}")
+    for index, elem in enumerate(test_list):
+        if isinstance(elem, list):
+            print("This is a list:")
+            for index_elem, element in enumerate(elem):
+                print(f"\t{index_elem}: {element}")
             print("-"*50)
         else:
-            print(f"{index} - {ELEM}")
+            print(f"{index} - {elem}")
 
 
 def while_true():
@@ -61,10 +61,7 @@ def while_true():
         time.sleep(1)
         if str(9) in str(timestamp):
             break
-    return
+    return True
 
-
-# dict_test()
-# list_and_for_cycle()
 
 while_true()

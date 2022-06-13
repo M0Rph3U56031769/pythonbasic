@@ -28,7 +28,7 @@ class MainClass:
 
         try:
             print(self.class_variable)
-        except Exception as err:
+        except NameError as err:
             print(err)
 
         print("This is a static method. cannot use class variables")
