@@ -48,7 +48,7 @@ class Employee:
                 None
         """
         for key, value in update_dict.items():
-            if value is "" and key != "description":
+            if value == "" and key != "description":
                 continue
             if key == "birth_day":
                 setattr(self, key, parser.parse(value))
