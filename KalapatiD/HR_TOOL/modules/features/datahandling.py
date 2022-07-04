@@ -19,5 +19,5 @@ class DataHandling:
     def write_json(data):
         file_path = os.path.join(ROOT_DIR, "../data/data.json")
         with open(file_path, mode="w", encoding="utf-8") as json_file:
-            json.dump(data, json_file ensure_ascii=False, indent=4)
+            json.dump(data, json_file, ensure_ascii=False, indent=4)
             json_file.write("\n")
