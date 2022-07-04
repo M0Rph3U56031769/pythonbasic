@@ -1,6 +1,6 @@
-from Moduls.main_menu import MainMenu
+from modules.features.main_menu import MainMenu
 
 if __name__ == "__main__":
-    print("Welcome on page")
+    print("Welcome on HR portal")
 
-    MainMenu.selector()
+    MainMenu.menu_selector()
